@@ -1,8 +1,0 @@
-# CMake generated Testfile for 
-# Source directory: /root/catkin_ws/Bluerov2-Simulation-with-docker-env/src/bluerov2/bluerov2_states
-# Build directory: /root/catkin_ws/Bluerov2-Simulation-with-docker-env/build/bluerov2/bluerov2_states
-# 
-# This file includes the relevant testing commands required for 
-# testing this directory and lists subdirectories to be tested as well.
-add_test(_ctest_bluerov2_states_roslaunch-check_launch "/root/catkin_ws/Bluerov2-Simulation-with-docker-env/build/catkin_generated/env_cached.sh" "/usr/bin/python3" "/opt/ros/noetic/share/catkin/cmake/test/run_tests.py" "/root/catkin_ws/Bluerov2-Simulation-with-docker-env/build/test_results/bluerov2_states/roslaunch-check_launch.xml" "--return-code" "/usr/local/bin/cmake -E make_directory /root/catkin_ws/Bluerov2-Simulation-with-docker-env/build/test_results/bluerov2_states" "/opt/ros/noetic/share/roslaunch/cmake/../scripts/roslaunch-check -o \"/root/catkin_ws/Bluerov2-Simulation-with-docker-env/build/test_results/bluerov2_states/roslaunch-check_launch.xml\" \"/root/catkin_ws/Bluerov2-Simulation-with-docker-env/src/bluerov2/bluerov2_states/launch\" ")
-set_tests_properties(_ctest_bluerov2_states_roslaunch-check_launch PROPERTIES  _BACKTRACE_TRIPLES "/opt/ros/noetic/share/catkin/cmake/test/tests.cmake;160;add_test;/opt/ros/noetic/share/roslaunch/cmake/roslaunch-extras.cmake;66;catkin_run_tests_target;/root/catkin_ws/Bluerov2-Simulation-with-docker-env/src/bluerov2/bluerov2_states/CMakeLists.txt;35;roslaunch_add_file_check;/root/catkin_ws/Bluerov2-Simulation-with-docker-env/src/bluerov2/bluerov2_states/CMakeLists.txt;0;")

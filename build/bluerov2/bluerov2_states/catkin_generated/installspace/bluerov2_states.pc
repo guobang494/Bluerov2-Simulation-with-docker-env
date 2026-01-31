@@ -1,8 +1,0 @@
-prefix=/root/catkin_ws/Bluerov2-Simulation-with-docker-env/install
-
-Name: bluerov2_states
-Description: Description of bluerov2_states
-Version: 0.0.0
-Cflags: -I${prefix}/include
-Libs: -L${prefix}/lib 
-Requires: geometry_msgs mavros_msgs roscpp std_msgs message_generation

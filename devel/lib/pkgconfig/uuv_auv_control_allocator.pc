@@ -1,8 +1,0 @@
-prefix=/root/catkin_ws/Bluerov2-Simulation-with-docker-env/devel
-
-Name: uuv_auv_control_allocator
-Description: Description of uuv_auv_control_allocator
-Version: 0.6.13
-Cflags: -I/root/catkin_ws/Bluerov2-Simulation-with-docker-env/devel/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime geometry_msgs std_msgs

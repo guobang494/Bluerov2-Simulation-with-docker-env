@@ -1,8 +1,0 @@
-prefix=/root/catkin_ws/Bluerov2-Simulation-with-docker-env/devel
-
-Name: bluerov2_gazebo
-Description: Description of bluerov2_gazebo
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

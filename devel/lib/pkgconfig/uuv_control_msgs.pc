@@ -1,8 +1,0 @@
-prefix=/root/catkin_ws/Bluerov2-Simulation-with-docker-env/devel
-
-Name: uuv_control_msgs
-Description: Description of uuv_control_msgs
-Version: 0.6.13
-Cflags: -I/root/catkin_ws/Bluerov2-Simulation-with-docker-env/devel/include
-Libs: -L${prefix}/lib 
-Requires: std_msgs geometry_msgs message_runtime
