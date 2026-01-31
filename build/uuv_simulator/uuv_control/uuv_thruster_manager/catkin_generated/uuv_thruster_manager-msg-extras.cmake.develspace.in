@@ -1,2 +1,0 @@
-set(uuv_thruster_manager_MESSAGE_FILES "")
-set(uuv_thruster_manager_SERVICE_FILES "/root/catkin_ws/eight-thurster/src/uuv_simulator/uuv_control/uuv_thruster_manager/srv/GetThrusterCurve.srv;/root/catkin_ws/eight-thurster/src/uuv_simulator/uuv_control/uuv_thruster_manager/srv/ThrusterManagerInfo.srv;/root/catkin_ws/eight-thurster/src/uuv_simulator/uuv_control/uuv_thruster_manager/srv/SetThrusterManagerConfig.srv;/root/catkin_ws/eight-thurster/src/uuv_simulator/uuv_control/uuv_thruster_manager/srv/GetThrusterManagerConfig.srv")
