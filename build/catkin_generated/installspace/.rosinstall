@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /root/catkin_ws/Bluerov2-Simulation-with-docker-env/install/setup.sh

@@ -1,0 +1,8 @@
+prefix=/root/catkin_ws/Bluerov2-Simulation-with-docker-env/devel
+
+Name: bluerov2_control
+Description: Description of bluerov2_control
+Version: 0.0.0
+Cflags: -I/root/catkin_ws/Bluerov2-Simulation-with-docker-env/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

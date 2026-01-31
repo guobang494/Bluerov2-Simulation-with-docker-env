@@ -11,10 +11,11 @@
 
   
 ### 1) Install Docker
+	https://docs.docker.com/engine/install/ubuntu/
 
 ### 2) Download the code
-        mkdir -p  ~/catkin_ws/src
-        cd ~/catkin_make/src
+        mkdir -p  ~/catkin_ws
+        cd ~/catkin_ws
         git clone https://github.com/guobang494/Bluerov2-Simulation-with-docker-env
 
    
@@ -31,6 +32,30 @@
           bash
   
 ### 3) Catkin_make
-       cd 
+      
+       cd /root/catkin_ws/Bluerov2-Simulation-with-docker-env/src/bluerov2/bluerov2_dobmpc/scripts
+       python3 generate_c_code.py
+       cd /root/catkin_ws/Bluerov2-Simulation-with-docker-env
+       catkin_make
+
+### 4) Change the path 
+	change this file 
+	/root/catkin_ws/Bluerov2-Simulation-with-docker-env/src/bluerov2/bluerov2_dobmpc/config/gazebo_tank.yaml
+	line 4   into 
+	ref_traj: /root/catkin_ws/Bluerov2-Simulation-with-docker-env/src/bluerov2/bluerov2_dobmpc/traj/tank_dob.txt
+
+   
+### 5) set gazebo display(not in the docker )    
+	open the other terminal 
+	xhost +local:docker
+   
+### 6) set gazebo display
+	cd /root/catkin_ws/Bluerov2-Simulation-with-docker-env
+	source ./devel/setup.bash
+	roslaunch /root/catkin_ws/Bluerov2-Simulation-with-docker-env/src/bluerov2/bluerov2_dobmpc/launch/start_dobmpc_tank.launch
+
+
+
+
 
 
