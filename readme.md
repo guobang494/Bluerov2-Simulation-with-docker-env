@@ -49,7 +49,7 @@
 	open the other terminal 
 	xhost +local:docker
    
-### 6) set gazebo display
+### 6) launch the demo
 	cd /root/catkin_ws/Bluerov2-Simulation-with-docker-env
 	source ./devel/setup.bash
 	roslaunch /root/catkin_ws/Bluerov2-Simulation-with-docker-env/src/bluerov2/bluerov2_dobmpc/launch/start_dobmpc_tank.launch
