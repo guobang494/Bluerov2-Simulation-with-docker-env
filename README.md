@@ -6,7 +6,7 @@ b) **control the BlueROV2 Heavy** in a laboratory environment, based on a **ROS 
 
 ## Installation 
 This software can be run in a **Docker container**, which we provide.
-Detailed instructions on installation of the container and on environmental set-up are available within the ![INSTALLATION](./INSTALLATION.md/) file.    
+Detailed instructions on installation of the container and on environmental set-up are available within the ![INSTALLATION](./INSTALLATION/INSTALLATION.md/) file.    
 
 ### Software version
 The installed code will make use of:
