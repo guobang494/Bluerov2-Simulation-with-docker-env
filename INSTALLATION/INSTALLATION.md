@@ -35,7 +35,7 @@ Confirm that your Docker installation is successful:
 sudo docker run hello-world
 ```
 This will print:  
-<img src="https://github.com/guobang494/Bluerov2-Simulation-with-docker-env/main/INSTALLATION/docker_hello_world.png" width=100% height=100%>
+<img src="https://github.com/guobang494/Bluerov2-Simulation-with-docker-env/blob/main/INSTALLATION/docker_hello_world.png" width=100% height=100%>
   
 ### 2) Download the code
         mkdir -p  ~/catkin_ws
