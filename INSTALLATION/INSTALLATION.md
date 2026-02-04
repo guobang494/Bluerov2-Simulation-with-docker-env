@@ -38,14 +38,19 @@ This will print:
 <img src="https://github.com/guobang494/Bluerov2-Simulation-with-docker-env/blob/main/INSTALLATION/docker_hello_world_terminal.png" width=100% height=100%>
   
 ### 2) Download the code
-        mkdir -p  ~/catkin_ws
-        cd ~/catkin_ws
-        git clone https://github.com/guobang494/Bluerov2-Simulation-with-docker-env
-
+Clone the repo into the standards catkin workspace:  
+```
+mkdir -p  ~/catkin_ws
+cd ~/catkin_ws
+git clone https://github.com/guobang494/Bluerov2-Simulation-with-docker-env
+```
    
 ### 2) Install Docker Image
-      docker pull zebangg/ros1_noetic_bluerov2:v2
-      docker run -it \
+Install the Docker image that we provide.   
+This step requires approx. 10 minutes, and 3Gb of space on your hard-drive.  
+```
+      sudo docker pull zebangg/ros1_noetic_bluerov2:v2
+      sudo docker run -it \
           --name my_bluerov_container \
           --network host \
           --privileged \
@@ -54,30 +59,38 @@ This will print:
           -e DISPLAY=$DISPLAY \
           zebangg/ros1_noetic_bluerov2:v2 \
           bash
+  ```
   
-### 3) Catkin_make
-      
+  You are now in the Docker container.  Test successful installation by running: 
+  ```
+  cd root
+  cd catkin_ws
+  ```
+  You should see the folder previously downloaded: ```Bluerov2-Simulation-with-docker-env```
+  
+### 3) Compile the provided code
+This step will compile the code (it takes approx 5 minutes):
+```
        cd /root/catkin_ws/Bluerov2-Simulation-with-docker-env/src/bluerov2/bluerov2_dobmpc/scripts
        python3 generate_c_code.py
        cd /root/catkin_ws/Bluerov2-Simulation-with-docker-env
        catkin_make
-
-### 4) Change the path 
-	change this file 
-	/root/catkin_ws/Bluerov2-Simulation-with-docker-env/src/bluerov2/bluerov2_dobmpc/config/gazebo_tank.yaml
-	line 4   into 
-	ref_traj: /root/catkin_ws/Bluerov2-Simulation-with-docker-env/src/bluerov2/bluerov2_dobmpc/traj/tank_dob.txt
-
-   
-### 5) set gazebo display(not in the docker )    
-	open the other terminal 
+```
+  
+### 5) Set gazebo display (not in the Docker)    
+Leave this terminal open, and open a new second terminal. In the second terminal, type:  
+```
 	xhost +local:docker
-   
-### 6) launch the demo
+```
+This allows the Docker to display content on the screen.  
+
+### 6) Launch the demo
+Return to the first terminal with the Docker.
+```
 	cd /root/catkin_ws/Bluerov2-Simulation-with-docker-env
 	source ./devel/setup.bash
 	roslaunch /root/catkin_ws/Bluerov2-Simulation-with-docker-env/src/bluerov2/bluerov2_dobmpc/launch/start_dobmpc_tank.launch
-
+```
 
 
 
