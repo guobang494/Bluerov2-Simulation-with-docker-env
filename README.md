@@ -17,7 +17,7 @@ In a nutshell, this software employs:
 ## Simulation 
 Upon following the installation instructions, you will be able to run a control architecture composed of a Model Predictive Control in the virtual water tank.   
 You will see the BlueROV2H vehicle as:  
-<img src="https://github.com/guobang494/Bluerov2-Simulation-with-docker-env/blob/main/INSTALLATION/docker_enable_graphics.png" width=100% height=100%>
+<img src="https://github.com/guobang494/Bluerov2-Simulation-with-docker-env/blob/main/INSTALLATION/BlueROV2H_UCL_Ocean_Towing_Tank.png" width=100% height=100%>
   moving in a path such as in the following example:  
 <img src="https://github.com/guobang494/Bluerov2-Simulation-with-docker-env/blob/main/INSTALLATION/Gazebo_animation.gif" width=100% height=100%>
 
