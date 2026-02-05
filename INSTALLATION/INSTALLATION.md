@@ -1,7 +1,7 @@
 # Installation instructions
 
 The installation provided below is composed of 6 steps.   
-Overall, you should be able to install the dependencies, and run the code within 20 minutes.   
+Overall, you should be able to install the dependencies, and test successful deployment of the code in simulation within 30 minutes.   
 
 
 ### 1) Install Docker
@@ -83,6 +83,10 @@ Leave this terminal open, and open a new second terminal. In the second terminal
 	xhost +local:docker
 ```
 This allows the Docker to display content on the screen.  
+This will print:  
+<img src="https://github.com/guobang494/Bluerov2-Simulation-with-docker-env/blob/main/INSTALLATION/docker_enable_graphics.png" width=100% height=100%>
+  
+
 
 ### 6) Launch the demo
 Return to the first terminal with the Docker.
@@ -95,9 +99,7 @@ Return to the first terminal with the Docker.
 
 
 
-### Acknowledgements 
-Reference https://github.com/HKPolyU-UAV/bluerov2/tree/huyang-backup
-(Based on the reference, eight propellers were introduced: bluerov2 -heavy config.)
+
 
 
 
