@@ -69,7 +69,7 @@ BLUEROV2_DOB::BLUEROV2_DOB(ros::NodeHandle& nh)
             pow(dt,2),pow(dt,2),pow(dt,2),pow(dt,2),pow(dt,2),pow(dt,2);
     noise_Q= Q_cov.asDiagonal();
     
-    esti_x << 2,0,-20,0,0,0,0,0,0,0,0,0,6,6,6,0,0,0;
+    esti_x << 0,0,-0.5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0;
     esti_P = P0;
 
     // Initialize body wrench force

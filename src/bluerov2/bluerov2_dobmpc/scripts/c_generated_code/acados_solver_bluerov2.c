@@ -508,21 +508,21 @@ void bluerov2_acados_setup_nlp_in(bluerov2_solver_capsule* capsule, const int N,
 
    double* W_0 = calloc(NY0*NY0, sizeof(double));
     // change only the non-zero elements:
-    W_0[0+(NY0) * 0] = 3000;
-    W_0[1+(NY0) * 1] = 3000;
-    W_0[2+(NY0) * 2] = 2000;
+    W_0[0+(NY0) * 0] = 2000;
+    W_0[1+(NY0) * 1] = 2000;
+    W_0[2+(NY0) * 2] = 1000;
     W_0[3+(NY0) * 3] = 15;
     W_0[4+(NY0) * 4] = 15;
-    W_0[5+(NY0) * 5] = 300;
+    W_0[5+(NY0) * 5] = 150;
     W_0[6+(NY0) * 6] = 100;
     W_0[7+(NY0) * 7] = 100;
     W_0[8+(NY0) * 8] = 50;
     W_0[9+(NY0) * 9] = 8;
     W_0[10+(NY0) * 10] = 8;
     W_0[11+(NY0) * 11] = 60;
-    W_0[12+(NY0) * 12] = 0.011;
-    W_0[13+(NY0) * 13] = 0.011;
-    W_0[14+(NY0) * 14] = 0.008;
+    W_0[12+(NY0) * 12] = 0.11;
+    W_0[13+(NY0) * 13] = 0.11;
+    W_0[14+(NY0) * 14] = 0.08;
     W_0[15+(NY0) * 15] = 0.12;
     ocp_nlp_cost_model_set(nlp_config, nlp_dims, nlp_in, 0, "W", W_0);
     free(W_0);
@@ -536,21 +536,21 @@ void bluerov2_acados_setup_nlp_in(bluerov2_solver_capsule* capsule, const int N,
     free(yref);
     double* W = calloc(NY*NY, sizeof(double));
     // change only the non-zero elements:
-    W[0+(NY) * 0] = 3000;
-    W[1+(NY) * 1] = 3000;
-    W[2+(NY) * 2] = 2000;
+    W[0+(NY) * 0] = 2000;
+    W[1+(NY) * 1] = 2000;
+    W[2+(NY) * 2] = 1000;
     W[3+(NY) * 3] = 15;
     W[4+(NY) * 4] = 15;
-    W[5+(NY) * 5] = 300;
+    W[5+(NY) * 5] = 150;
     W[6+(NY) * 6] = 100;
     W[7+(NY) * 7] = 100;
     W[8+(NY) * 8] = 50;
     W[9+(NY) * 9] = 8;
     W[10+(NY) * 10] = 8;
     W[11+(NY) * 11] = 60;
-    W[12+(NY) * 12] = 0.011;
-    W[13+(NY) * 13] = 0.011;
-    W[14+(NY) * 14] = 0.008;
+    W[12+(NY) * 12] = 0.11;
+    W[13+(NY) * 13] = 0.11;
+    W[14+(NY) * 14] = 0.08;
     W[15+(NY) * 15] = 0.12;
 
     for (int i = 1; i < N; i++)
@@ -565,12 +565,12 @@ void bluerov2_acados_setup_nlp_in(bluerov2_solver_capsule* capsule, const int N,
 
     double* W_e = calloc(NYN*NYN, sizeof(double));
     // change only the non-zero elements:
-    W_e[0+(NYN) * 0] = 3000;
-    W_e[1+(NYN) * 1] = 3000;
-    W_e[2+(NYN) * 2] = 2000;
+    W_e[0+(NYN) * 0] = 2000;
+    W_e[1+(NYN) * 1] = 2000;
+    W_e[2+(NYN) * 2] = 1000;
     W_e[3+(NYN) * 3] = 15;
     W_e[4+(NYN) * 4] = 15;
-    W_e[5+(NYN) * 5] = 300;
+    W_e[5+(NYN) * 5] = 150;
     W_e[6+(NYN) * 6] = 100;
     W_e[7+(NYN) * 7] = 100;
     W_e[8+(NYN) * 8] = 50;
