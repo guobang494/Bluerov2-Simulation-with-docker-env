@@ -21,6 +21,7 @@ You will see the BlueROV2H vehicle as:
   moving in a path such as in the following example:  
 <img src="https://github.com/guobang494/Bluerov2-Simulation-with-docker-env/blob/main/INSTALLATION/Gazebo_animation.gif" width=100% height=100%>
 
+The full list of instructions to reproduce the demo are available within the ![SIMULATION_INSTRUCTIONS](./INSTALLATION/SIMULATION_INSTRUCTIONS.md/) file.    
 
 
 

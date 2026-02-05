@@ -3,7 +3,7 @@ These instructions start a Gazebo demo to run the BlueROV2H controlled via MPC, 
 If you want to change the path scenario, we provide further instructions in the ![Path scenario instructions](./Path_scenario_instructions.md/) file.  
 
 ### 0) Pre-requisite
-These instructions assume that you installed the container, as explained in ![INSTALLATION](./INSTALLATION/INSTALLATION.md/) file.     
+These instructions assume that you installed the container, as explained in ![INSTALLATION](./INSTALLATION.md/) file.     
 
 
 ### 1) Start the container
@@ -19,6 +19,7 @@ Leave the first terminal open, and open a new second terminal. In the second ter
 	xhost +local:docker
 ```
 This allows the Docker to display content on the screen.  
+
 
 ### 3) Start the Gazebo demo
 Start a demo lasting for 180 s, where the BlueROV2H follows the pre-defined lemniscate path:
